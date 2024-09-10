@@ -1,26 +1,44 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  
+  <div id="app">
+    <!-- <div id="particles-background"></div> -->
+    <Chatbot />
+  </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Chatbot from './components/ChatBot.vue';
+// import { particlesJS } from 'particles.js';
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    Chatbot
+  },
+  // mounted() {
+  //   // Initialize particles
+  //   particlesJS.load('particles-background', '/particles.json', function() {
+  //     console.log('Particles.js loaded');
+  //   });
+  // }
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Protest+Guerrilla&display=swap');
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden; /* Prevent scrolling */
 }
+#app {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
 </style>

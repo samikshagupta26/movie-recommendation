@@ -3,13 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "start": "set NODE_ENV=dev && node app.js",
+    "serve": "set NODE_ENV=dev &&vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@tsparticles/vue3": "^3.0.1",
+    "cheerio": "^1.0.0",
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "dotenv": "^16.4.5",
+    "particles.js": "^2.0.0",
+    "vue": "^3.2.13",
+    "vue-particles": "^1.0.9"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
