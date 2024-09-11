@@ -258,7 +258,7 @@ html, body {
   flex-direction: column;
   position: absolute;
   right: 5%;
-  height: 90vh;
+  height: 85vh;
   width: 50%;
   max-width: 80vw;
   border: 1px solid #141414;
