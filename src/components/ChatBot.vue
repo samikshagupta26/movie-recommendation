@@ -258,7 +258,8 @@ html, body {
   flex-direction: column;
   position: absolute;
   right: 5%;
-  height: 85vh;
+  
+  height: 90vh;
   width: 50%;
   max-width: 80vw;
   border: 1px solid #141414;
@@ -449,6 +450,10 @@ button svg {
 
 /* Responsive behavior */
 @media (max-width: 768px) {
+  .chatbot{
+    top: 3%;
+    height: 80vh;
+  }
   .movie-card {
     flex-direction: column;
   }
